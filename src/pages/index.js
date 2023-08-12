@@ -1,10 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Matrix from '@/components/Matrix'
-
-const inter = Inter({ subsets: ['latin'] })
+import localFont from 'next/font/local'
+import Matrix from '@/components/Matrix';
+const myFont = localFont({ src: '../../fonts/matrix.ttf' });
 
 export default function Home() {
   return (
@@ -12,10 +9,9 @@ export default function Home() {
       <Head>
         <title>Matrix</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <Matrix />  
+      <main className={`${myFont.className}`}>
+        <Matrix /> 
       </main>
     </>
   )
