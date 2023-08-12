@@ -1,0 +1,15 @@
+.matrix-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    color:#00ff00;
+  }
+  
+  .matrix-number {
+    position: absolute;
+    font-size: 16px;
+    user-select: none;
+  }
+  
